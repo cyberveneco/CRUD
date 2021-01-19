@@ -41,7 +41,7 @@
 <body>
     <div class="contenedor">
         <h2>CRUD EN PHP CON MYSQL</h2>
-        <form action=""  method="post">
+        <form action=""  method="POST">
             <div class="form-group">
                 <input type="text" name="nombre" placeholder="Nombre" class="input_text">
                 <input type="text" name="apellidos" placeholder="Apellidos" class="input_text">

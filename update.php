@@ -4,10 +4,8 @@
     if (isset($_GET['id'])) {
         $id=(int) $_GET['id'];
 
-        $buscar_id=$con->prepare('SELEC * FROM clientes WHERE id=:id LIMIT 1');
-        $buscar_id->execute(array(
-            'id'=>$id
-        ));
+        $buscar_id=$con->prepare('SELECT * FROM clientes WHERE id=:id LIMIT 1');
+        $buscar_id->execute(array(':id'=>$id));
         $resultado=$buscar_id->fetch();
     } else {
         header('Location: index.php');
